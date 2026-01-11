@@ -11,7 +11,7 @@ const char* password = "YOUR_WIFI_PASS";  // <== แก้รหัส WiFi
 
 /* ================= GOOGLE SCRIPT ================= */
 // ใส่ URL ที่ได้จาก Deploy Web App (ต้องลงท้ายด้วย /exec)
-const char* scriptURL = "https://script.google.com/macros/s/xxxxxxxxx/exec";
+const char* scriptURL = "https://script.google.com/macros/s/xxxxxxxxx/exec";  //<==แก้ไข URL
 
 /* ================= LCD ================= */
 LiquidCrystal_I2C lcd(0x27, 16, 2);
