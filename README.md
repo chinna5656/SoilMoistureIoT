@@ -29,7 +29,7 @@ ESP8266 (NodeMCU)
 ├── LCD Display
 ├── Relay Control (Pump 1 & 2)
 └── WiFi → Google Apps Script → Google Sheets
-'''
+```   
 ---
 
 ## 🔧 Hardware Requirements
