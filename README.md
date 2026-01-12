@@ -19,3 +19,44 @@
 
 ## 🧠 System Architecture
 
+Soil Sensors (4)
+│
+▼
+ADS1115 (I2C)
+│
+▼
+ESP8266 (NodeMCU)
+├── LCD Display
+├── Relay Control (Pump 1 & 2)
+└── WiFi → Google Apps Script → Google Sheets
+
+---
+
+## 🔧 Hardware Requirements
+- ESP8266 (NodeMCU / Wemos D1 Mini)
+- ADS1115 ADC (16-bit)
+- Soil Moisture Sensor x4
+- Relay Module x2
+- Water Pump x2
+- LCD 16x2 (I2C)
+- Power Supply (ตามสเปกปั๊ม)
+
+---
+
+## 📦 Software Requirements
+- Arduino IDE
+- ESP8266 Board Package
+- Libraries:
+  - `Adafruit_ADS1X15`
+  - `LiquidCrystal_I2C`
+  - `ESP8266WiFi`
+  - `ESP8266HTTPClient`
+
+---
+
+## ⚙️ Configuration
+
+### 🔹 WiFi
+```cpp
+const char* ssid = "YOUR_WIFI";
+const char* password = "YOUR_PASSWORD";
